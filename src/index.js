@@ -5,6 +5,10 @@ class BMapLoader {
       return null;
     }
     return new Promise((resolve, reject) => {
+      if (!ak) {
+        reject("ak is required");
+        return;
+      }
       window.bmap_js_loader_callback = () => {
         resolve(window.BMapGL);
       };
