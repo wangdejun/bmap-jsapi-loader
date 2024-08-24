@@ -1,4 +1,4 @@
-# bmap-jsapi-loader
+# simple-bmap-jsapi-loader
 
 - jsapi loader for Baidu map. support dynamic importing, you donot need to import the whole jsapi file in html file。
 

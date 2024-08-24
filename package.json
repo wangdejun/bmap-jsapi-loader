@@ -1,5 +1,5 @@
 {
-  "name": "bmap-jsapi-loader",
+  "name": "simple-bmap-jsapi-loader",
   "version": "1.0.0",
   "description": "bmap loader",
   "main": "index.js",
