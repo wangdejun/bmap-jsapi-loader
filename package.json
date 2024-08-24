@@ -1,0 +1,28 @@
+{
+  "name": "bmap-jsapi-loader",
+  "version": "1.0.0",
+  "description": "bmap loader",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup src/index.js --file build/bundle.js --format umd --name 'BMapLoader'",
+    "buildIIFE": "rollup src/index.js --file build/bundle.js --format iife --name 'BMapLoader'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wangdejun/bmap-jsapi-loader.git"
+  },
+  "keywords": [
+    "loader",
+    "bmap"
+  ],
+  "author": "wangdejun",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wangdejun/bmap-jsapi-loader/issues"
+  },
+  "homepage": "https://github.com/wangdejun/bmap-jsapi-loader#readme",
+  "devDependencies": {
+    "rollup": "^4.21.0"
+  }
+}

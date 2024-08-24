@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>bmap</title>
+  </head>
+  <body>
+    <div id="bmap-container" style="width: 500px; height: 500px"></div>
+    <script src="../build/bundle.js"></script>
+    <script type="module">
+      BMapLoader.load({
+        ak: "your ak",
+        type: "webgl",
+        version: "1.0",
+      }).then(
+        (BMap) => {
+          const map = new BMap.Map("bmap-container");
+          map.centerAndZoom(new BMap.Point(116.404, 39.915), 11);
+        },
+        (error) => {
+          console.error(error);
+        }
+      );
+    </script>
+  </body>
+</html>
